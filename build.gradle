@@ -1,7 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'checkstyle'
-apply plugin: 'cobertura'
+//apply plugin: 'cobertura'
 apply plugin: 'application'
 
 mainClassName = "edu.cmu.cs.cs214.hw4.gui.Scrabble"
@@ -35,8 +35,8 @@ buildscript{
     mavenCentral()
   }
 
-  dependencies {
-    classpath 'net.saliman:gradle-cobertura-plugin:2.2.5'
-  }
+//  dependencies {
+//    classpath 'net.saliman:gradle-cobertura-plugin:2.2.5'
+//  }
 }
-cobertura.coverageFormats = ['html', 'xml']
+//cobertura.coverageFormats = ['html', 'xml']
